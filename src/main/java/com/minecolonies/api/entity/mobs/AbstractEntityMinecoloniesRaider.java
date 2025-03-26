@@ -430,10 +430,11 @@ public abstract class AbstractEntityMinecoloniesRaider extends AbstractEntityMin
     {
         if (damageSource.getDirectEntity() == null)
         {
-            if (envDamageImmunity || tempEnvDamageImmunity)
+            // The following if-statement makes raiders immune to turrets and other automated defense systems
+            /* if (envDamageImmunity || tempEnvDamageImmunity)
             {
                 return false;
-            }
+            } */
 
             if (--envDmgCooldown <= 0)
             {
